@@ -1,0 +1,147 @@
+main {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-image: url("/images/bg-desktop.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: $Violet;
+  background-repeat: no-repeat;
+  padding: 5% 4% 2% 4%;
+  @media (max-width: 750px) {
+    background-image: url("/images/bg-mobile.svg");
+    background-position: top;
+    padding: 7% 10% 10% 10%;
+  }
+
+  > header {
+    > nav {
+      > a {
+        > img {
+          width: 18%;
+          @media (max-width: 750px) {
+            width: 41%;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    margin-top: 4.2%;
+    @media (max-width: 750px) {
+      flex-direction: column;
+      margin-top: 21.7%;
+    }
+    &-bg {
+      position: relative;
+      width: 75%;
+      @media (max-width: 750px) {
+        width: 100%;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      color: white;
+      position: relative;
+      width: 50%;
+      padding: 4% 0 0 4%;
+      @media (max-width: 750px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      > h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3vw;
+        margin-bottom: 9%;
+        @media (max-width: 750px) {
+          font-size: 6vw;
+          margin: 25% 0 10% 0;
+        }
+      }
+
+      > p {
+        font-size: 1.18vw;
+        margin-bottom: 5.6%;
+        @media (max-width: 750px) {
+          font-size: 4.1vw;
+          margin-bottom: 13%;
+        }
+      }
+
+      > button {
+        width: 42%;
+        height: 11.3%;
+        color: $Violet;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.4vw;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.2s;
+        @media (max-width: 750px) {
+          width: 69%;
+          height: 10%;
+          border-radius: 40px;
+          margin-bottom: 22%;
+          font-size: 3vw;
+        }
+
+        &:hover {
+          color: white;
+          background-color: $SofMagenta;
+        }
+      }
+    }
+  }
+
+  > footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    @media (max-width: 750px) {
+      justify-content: center;
+    }
+    .links {
+      position: relative;
+      display: flex;
+      .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        font-size: 1.3vw;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+          border-color: $SofMagenta;
+          .fab{
+            color: $SofMagenta;
+          }
+        }
+        @media (max-width: 750px) {
+          width: 7vw;
+          height: 7vw;
+          font-size: 3vw;
+          margin-left: 3vw;
+        }
+
+        .fab{
+          color: white;
+        }
+      }
+    }
+  }
+}

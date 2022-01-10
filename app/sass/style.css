@@ -1,0 +1,247 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-image: url("/images/bg-desktop.svg");
+  background-position: center;
+  background-size: contain;
+  background-color: #674baf;
+  background-repeat: no-repeat;
+  padding: 5% 4% 2% 4%;
+}
+
+@media (max-width: 750px) {
+  main {
+    background-image: url("/images/bg-mobile.svg");
+    background-position: top;
+    padding: 7% 10% 10% 10%;
+  }
+}
+
+main > header > nav > a > img {
+  width: 18%;
+}
+
+@media (max-width: 750px) {
+  main > header > nav > a > img {
+    width: 41%;
+  }
+}
+
+main .container {
+  position: relative;
+  width: 100%;
+  margin-top: 4.2%;
+}
+
+@media (max-width: 750px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 21.7%;
+  }
+}
+
+main .container-bg {
+  position: relative;
+  width: 75%;
+}
+
+@media (max-width: 750px) {
+  main .container-bg {
+    width: 100%;
+  }
+}
+
+main .container-bg > img {
+  width: 100%;
+}
+
+main .container-text {
+  color: white;
+  position: relative;
+  width: 50%;
+  padding: 4% 0 0 4%;
+}
+
+@media (max-width: 750px) {
+  main .container-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+main .container-text > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 9%;
+}
+
+@media (max-width: 750px) {
+  main .container-text > h1 {
+    font-size: 6vw;
+    margin: 25% 0 10% 0;
+  }
+}
+
+main .container-text > p {
+  font-size: 1.18vw;
+  margin-bottom: 5.6%;
+}
+
+@media (max-width: 750px) {
+  main .container-text > p {
+    font-size: 4.1vw;
+    margin-bottom: 13%;
+  }
+}
+
+main .container-text > button {
+  width: 42%;
+  height: 11.3%;
+  color: #674baf;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4vw;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 750px) {
+  main .container-text > button {
+    width: 69%;
+    height: 10%;
+    border-radius: 40px;
+    margin-bottom: 22%;
+    font-size: 3vw;
+  }
+}
+
+main .container-text > button:hover {
+  color: white;
+  background-color: #e882e8;
+}
+
+main > footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 750px) {
+  main > footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main > footer .links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main > footer .links .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  font-size: 1.3vw;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main > footer .links .social-link:hover {
+  border-color: #e882e8;
+}
+
+main > footer .links .social-link:hover .fab {
+  color: #e882e8;
+}
+
+@media (max-width: 750px) {
+  main > footer .links .social-link {
+    width: 7vw;
+    height: 7vw;
+    font-size: 3vw;
+    margin-left: 3vw;
+  }
+}
+
+main > footer .links .social-link .fab {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
