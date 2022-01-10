@@ -164,8 +164,8 @@ main .container-text > button {
 @media (max-width: 750px) {
   main .container-text > button {
     width: 69%;
-    height: 10%;
-    border-radius: 40px;
+    height: 12vw;
+    border-radius: 7vw;
     margin-bottom: 22%;
     font-size: 3vw;
   }
